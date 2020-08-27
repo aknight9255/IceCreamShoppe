@@ -16,11 +16,11 @@ namespace IceCreamBackEnd
             Texture = texture;
             Quantity = quantity;
         }
-        public IceCream() { Quantity = 42; }
+        public IceCream() { }
         public string Flavor { get; set; }
         public bool ContainsDairy { get; set; }
         public bool ContainsNuts { get; set; }
         public string Texture { get; set; }
-        public int Quantity { get; set; }
+        public int Quantity { get { return 42; } set { } }
     }
 }
